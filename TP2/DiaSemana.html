@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+    var semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+
+
+    function encontrar() {
+        do {
+        var dia = prompt("Ingresar un dia de la semana");
+        } while (dia == "");
+
+
+      var busqueda = "";
+      for (var i = 0; i < semana.length; i++) {
+        if (semana[i] == dia) {
+            if (i <= 4 ) {
+                console.log("Existe y es dia de semana!");  
+            } else console.log("Existe y es fin de semana");
+        break;
+        };
+    };
+  
+}
+    
+    
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value= "clickme" onclick="encontrar();" />
+</body>
+</html>
