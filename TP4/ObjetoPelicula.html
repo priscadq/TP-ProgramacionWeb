@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+    var vectortodasmispelis = [];
+
+    // Creacion Objeto PELICULA 0    1             2         3       4           5       6
+    var Pelicula = function (_ID, _titulo, _descripcion, _anio, _duracion, _director,  _actores) {
+        this.ID = _ID;
+        this.titulo = _titulo;
+        this.descripcion = _descripcion;
+        this.anio = _anio;
+        this.duracion = _duracion;
+        this.director = _director;
+        this.actores = [];
+
+
+        for (var i = 0; i < _actores.length; i++) {
+        this.actores.push(new Actor(_actores[i][0]))
+        }
+
+        this.agregarActor = function (nuevoactor) {
+        this.productos.push(nuevoactor);
+        }
+    }
+    // Creacion objeto Actor 
+    var Actor = function (_nombre) {
+    this.nombre =_nombre;
+    }
+
+
+    function MostrarTodo(c) {
+    
+     document.getElementById("LALALA").innerHTML = datosClientes; 
+    }
+
+    
+    // _ID, _titulo, _descripcion, _anio, _duracion, _director,  _actores
+    var datosClientes  = [
+        [
+         1, "El secetro de sus ojos", "Que se yo", "2009", "2h", "Juan Jose Campanella",
+            [
+            ["Ricardo Darin"],
+            ["Soledad Villamil"],
+       
+            ],
+        ],
+    ]
+
+    </script>
+</head>
+<body>
+        <input type="button" value="+ Nuevo Cliente" onclick="MostrarTodo()"/>
+    <div id="LALALA"></div>
+</body>
+</html>

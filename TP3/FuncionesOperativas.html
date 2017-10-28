@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    
+    function sumar() {
+        do {
+        var num1=parseInt(prompt("Ingresar Primer Numero"));
+        } while (isNaN(num1));
+    
+        do {
+        var num2=parseInt(prompt("Ingresar Segundo Numero"));
+        } while (isNaN(num2));
+
+        var res = num1 + num2;
+        console.log(res)
+    }
+
+    function restar() {
+        do {
+        var num1=parseInt(prompt("Ingresar Primer Numero"));
+        } while (isNaN(num1));
+    
+        do {
+        var num2=parseInt(prompt("Ingresar Segundo Numero"));
+        } while (isNaN(num2));
+
+        var res = num1 - num2;
+        console.log(res)
+    }
+    function multiplicar() {
+        do {
+        var num1=parseInt(prompt("Ingresar Primer Numero"));
+        } while (isNaN(num1));
+    
+        do {
+        var num2=parseInt(prompt("Ingresar Segundo Numero"));
+        } while (isNaN(num2));
+
+        var res = num1 * num2;
+        console.log(res)
+    }
+    function dividir() {
+        do {
+        var num1=parseInt(prompt("Ingresar Primer Numero"));
+        } while (isNaN(num1));
+    
+        do {
+        var num2=parseInt(prompt("Ingresar Segundo Numero"));
+        } while (isNaN(num2));
+
+        var res = num1 / num2;
+        console.log(res)
+    }
+
+    
+    
+    </script>
+</head>
+<body>
+    
+    <input type="button" value= "sumar" onclick="sumar();" />
+    <input type="button" value= "restar" onclick="restar();" />
+    <input type="button" value= "multiplicar" onclick="multiplicar();" />
+    <input type="button" value= "dividir" onclick="dividir();" />
+
+</body>
+</html>
